@@ -24,6 +24,9 @@ a:hover {
 a:active {
   color: #8000ff;
 }
+a.raw {
+  font-size: 80%
+}
 h1 {
   font-variant: small-caps;
 }
