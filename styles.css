@@ -23,6 +23,7 @@ h2 {
   font-size: 200%, 2.00em;
   font-weight: 700;
   letter-spacing: -0.5px;
+  text-align: center;
 }
 #main {
   width: 60%;
