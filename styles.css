@@ -9,8 +9,9 @@ body {
   font-family: "Garamond", "Times New Roman", Times, serif;
 }
 h1 {
-  font-family: "Arial Narrow", "Helvetica";
-  font-variant: small-caps;
+  font-family: "Arial";
+  font-variant: normal;
+  letter-spacing: -1px;
   text-align: center;
 }
 h2 {
