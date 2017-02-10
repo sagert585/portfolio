@@ -41,6 +41,9 @@ h2 {
   width: 80%;
   height: 75%;
   margin: auto;
+  border: 1px solid #f0f0f5;
+  outline-style: double;
+  outline-color: #330066;
 }
 a:link {
   color: #59804d;
