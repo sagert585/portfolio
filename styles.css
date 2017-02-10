@@ -19,7 +19,7 @@ h1 {
 h2 {
   font-family: "Arial Narrow";
   font-weight: 400;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 #sub {
   font-size: 1.50em;
