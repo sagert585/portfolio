@@ -231,4 +231,5 @@ function initialize() {
   
   styleSelector.addEventListener('change', function() {
     map.setOptions({styles: styles[styleSelector.value]});
+  });
 }
