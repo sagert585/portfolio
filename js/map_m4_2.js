@@ -3,7 +3,8 @@ function initialize() {
   var mapOptions = {
     zoom: 12,
     center: islands,
-    mapTypeId: 'terrain'
+    mapTypeId: 'terrain',
+    mapTypeControl: false
   };
   var map = new google.maps.Map(
     document.getElementById("map_canvas"),
