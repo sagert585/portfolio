@@ -223,7 +223,7 @@ function initialize() {
   var map = new google.maps.Map(
     document.getElementById("map_canvas"),
     mapOptions);
-  var styleControl = document.getElementbById('style-selector-control');
+  var styleControl = document.getElementById('style-selector-control');
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
   
   var styleSelector = document.getElementById('style-selector');
