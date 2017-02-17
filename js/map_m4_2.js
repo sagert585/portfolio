@@ -17,9 +17,7 @@ function initialize() {
     document.getElementById("map_canvas"),
     mapOptions);
 
-  var styledMapType = {
-    mapTypeId: 'terrain',
-    new google.maps.StyledMapType(
+  var styledMapType = new google.maps.StyledMapType(
     [
       {
         "featureType": "administrative",
@@ -234,7 +232,6 @@ function initialize() {
       }
     ],
         {name: 'Superior Shores'}); 
-}
 
   map.mapTypes.set('superior_shores', styledMapType);
   map.setMapTypeId('superior_shores')
