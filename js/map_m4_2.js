@@ -1,5 +1,22 @@
 function initialize() {
   var islands = new google.maps.LatLng(46.832547,-90.762879)
+  
+  var mapOptions = {
+    zoom: 12,
+    center: islands,
+    mapTypeId: 'terrain',
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      mapTypeIds: ['roadmap', 'terrain', 'hybrid', 'satellite', 'superior_shores'],
+      position: google.maps.ControlPosition.TOP_CENTER
+    },
+    scaleControl: true
+  };
+  var map = new google.maps.Map(
+    document.getElementById("map_canvas"),
+    mapOptions);
+
   var styledMapType = new google.maps.StyledMapType(
     [
       {
@@ -214,23 +231,7 @@ function initialize() {
             "color": "#aaf7ff"}]
       }
     ],
-        {name: 'Superior Shores'});
-  
-  var mapOptions = {
-    zoom: 12,
-    center: islands,
-    mapTypeId: 'terrain',
-    mapTypeControl: true,
-    mapTypeControlOptions: {
-      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-      mapTypeIds: ['roadmap', 'terrain', 'hybrid', 'satellite', 'superior_shores'],
-      position: google.maps.ControlPosition.TOP_CENTER
-    },
-    scaleControl: true
-  };
-  var map = new google.maps.Map(
-    document.getElementById("map_canvas"),
-    mapOptions);
+        {name: 'Superior Shores'});  
   
   map.mapTypes.set('superior_shores', styledMapType);
   map.setMapTypeId('superior_shores')
