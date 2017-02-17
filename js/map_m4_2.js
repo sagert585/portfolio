@@ -1,28 +1,7 @@
 function initialize() {
   var islands = new google.maps.LatLng(46.832547,-90.762879)
-  var mapOptions = {
-    zoom: 12,
-    center: islands,
-    mapTypeId: 'terrain',
-    mapTypeControl: true
-  };
-  var map = new google.maps.Map(
-    document.getElementById("map_canvas"),
-    mapOptions);
-
-  var styleControl = document.getElementById('style-selector-control');
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
-  
-  var styleSelector = document.getElementById('style-selector');
-  map.setOptions({styles: styles[styleSelector.value]});
-  
-  styleSelector.addEventListener('change', function() {
-    map.setOptions({styles: styles[styleSelector.value]});
-}
-
-var styles = {
-default: null,
-homemade: [
+  var styledMapType = new google.maps.StyledMapType(
+    [
   {
     "featureType": "administrative",
     "elementType": "geometry.fill",
@@ -232,9 +211,27 @@ homemade: [
     "elementType": "labels.text.fill",
     "stylers": [
       {
-        "color": "#aaf7ff"
-      }
-    ]
+        "color": "#aaf7ff"}]
   }
-]
-};
+],
+    {name: 'Superior Shores'});
+  
+  var mapOptions = {
+    zoom: 12,
+    center: islands,
+    mapTypeId: 'terrain',
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      mapTypeIds: ['roadmap', 'terrain', 'hybrid', 'satellite', 'superior_shores'],
+      position: google.maps.ControlPosition.TOP_CENTER
+    },
+    scaleControl: true
+  };
+  var map = new google.maps.Map(
+    document.getElementById("map_canvas"),
+    mapOptions);
+  
+  map.mapTypes.set('superior_shores', styledMapType);
+  map.setMapTypeId('superior_shores')
+}
