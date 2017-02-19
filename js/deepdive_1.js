@@ -181,9 +181,24 @@ var layer1 = new google.maps.FusionTablesLayer({
       }
     });
   
+var layer2 = new google.maps.FusionTablesLayer({
+      map: map,
+      heatmap: { enabled: false },
+      query: {
+        select: "col5",
+        from: "1-bRR0NErzW-vPr5vS7wZ_xusN6FCJfDfzRzFT9uS",
+        where: ""
+      },
+      options: {
+        styleId: 2,
+        templateId: 2
+      }
+    });
+  
 var map = new google.maps.Map(
   document.getElementById("map_canvas"),
   mapOptions);
   
 layer1.setMap(map);
+layer2.setMap(map);
 }
