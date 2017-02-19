@@ -181,7 +181,9 @@ var layer = new google.maps.FusionTablesLayer({
       }
     });
   
-  var map = new google.maps.Map(
-    document.getElementById("map_canvas"),
-    mapOptions);
+var map = new google.maps.Map(
+  document.getElementById("map_canvas"),
+  mapOptions);
+  
+layer.setMap(map);
 }
