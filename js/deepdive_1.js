@@ -167,7 +167,7 @@ function initialize() {
 ]
 };
   
-    layer = new google.maps.FusionTablesLayer({
+var layer = new google.maps.FusionTablesLayer({
       map: map,
       heatmap: { enabled: false },
       query: {
