@@ -166,6 +166,21 @@ function initialize() {
   }
 ]
 };
+  
+    layer = new google.maps.FusionTablesLayer({
+      map: map,
+      heatmap: { enabled: false },
+      query: {
+        select: "col2",
+        from: "1pjK3l1oa8rLG56mQYlsmTZjocpICznvDR778RnHi",
+        where: ""
+      },
+      options: {
+        styleId: 2,
+        templateId: 2
+      }
+    });
+  
   var map = new google.maps.Map(
     document.getElementById("map_canvas"),
     mapOptions);
