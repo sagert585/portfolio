@@ -1,8 +1,8 @@
 function initialize() {
-  var islands = new google.maps.LatLng(46.832547,-90.762879)
+  var islands2 = new google.maps.LatLng(46.916668,-90.672922)
   var mapOptions = {
-    zoom: 12,
-    center: islands,
+    zoom: 11,
+    center: islands2,
     mapTypeId: 'terrain',
     styles: [
   {
