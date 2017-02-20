@@ -58,6 +58,10 @@ h2 {
 }
 #legend img {
   transform: scale(0.5);
+  vertical-align: middle;
+}
+#legend h3 {
+  font-variant: normal;
 }
 a:link {
   color: #59804d;
