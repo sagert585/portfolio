@@ -21,6 +21,9 @@ h2 {
   font-weight: 400;
   letter-spacing: -0.5px;
 }
+InfoWindow {
+  background-color: #666699;
+}
 #sub {
   font-size: 1.50em;
   font-size: 150%;
