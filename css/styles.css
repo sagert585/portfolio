@@ -52,8 +52,12 @@ h2 {
   background-color: #f0f0f5;
   padding: 10px;
   margin: 10px;
+  border: 1px solid #400080;
   outline-style: double;
-  outline-color: #400080;
+  outline-color: #666699;
+}
+#legend img {
+  transform: scale(0.5);
 }
 a:link {
   color: #59804d;
