@@ -201,4 +201,25 @@ var map = new google.maps.Map(
   
 layer1.setMap(map);
 layer2.setMap(map);
+  
+var icons = {
+  lighthouse: {
+    name: 'Lighthouse',
+    icon: 'http://maps.google.com/mapfiles/kml/shapes/lighthouse.png'
+  },
+  shipwreck: {
+    name: 'Shipwreck',
+    icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-blank.png'
+  }
+}
+  
+var legend = document.getElementById('legend');
+for (var key in icons) {
+  var type = icons[key];
+  var name = type.name;
+  var icon = type.icon;
+  var div = document.createElement('div');
+  div.innerHTML = '<img src="' + icon + '"> ' + name;
+  legend.appendChild(div);
+}
 }
