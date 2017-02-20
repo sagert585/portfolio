@@ -46,11 +46,10 @@ h2 {
   outline-color: #400080;
 }
 #legend {
-  font-family: "Arial";
-  font-variant: small-caps;
-  letter-spacing: -1px;
+  font-family: "Garamond", "Times New Roman", Times, serif;
   background-color: #f0f0f5;
   margin: 10px;
+  padding-right: 10px;
   border: 1px solid #400080;
   outline-style: double;
   outline-color: #666699;
@@ -60,6 +59,8 @@ h2 {
   vertical-align: middle;
 }
 #legend h3 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
   font-variant: normal;
   text-align: center;
 }
