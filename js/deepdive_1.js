@@ -4,6 +4,8 @@ function initialize() {
     zoom: 10,
     center: islands2,
     mapTypeId: 'terrain',
+    scaleControl: true,
+    rotateControl: true,
     styles: [
   {
     "elementType": "geometry",
