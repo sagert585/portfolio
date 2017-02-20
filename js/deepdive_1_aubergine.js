@@ -1,9 +1,11 @@
 function initialize() {
-  var islands = new google.maps.LatLng(46.832547,-90.762879)
+  var islands2 = new google.maps.LatLng(46.916668,-90.672922)
   var mapOptions = {
-    zoom: 12,
-    center: islands,
+    zoom: 10,
+    center: islands2,
     mapTypeId: 'terrain',
+    scaleControl: true,
+    rotateControl: true,
     styles: [
   {
     "elementType": "geometry",
@@ -236,9 +238,65 @@ function initialize() {
       }
     ]
   }
-]  
+]
 };
-  var map = new google.maps.Map(
-    document.getElementById("map_canvas"),
-    mapOptions);
+  
+var layer1 = new google.maps.FusionTablesLayer({
+      map: map,
+      heatmap: { enabled: false },
+      query: {
+        select: "col2",
+        from: "1pjK3l1oa8rLG56mQYlsmTZjocpICznvDR778RnHi",
+        where: ""
+      },
+      options: {
+        styleId: 2,
+        templateId: 2
+      }
+    });
+  
+var layer2 = new google.maps.FusionTablesLayer({
+      map: map,
+      heatmap: { enabled: false },
+      query: {
+        select: "col5",
+        from: "1-bRR0NErzW-vPr5vS7wZ_xusN6FCJfDfzRzFT9uS",
+        where: ""
+      },
+      options: {
+        styleId: 2,
+        templateId: 2
+      }
+    });
+  
+var map = new google.maps.Map(
+  document.getElementById("map_canvas"),
+  mapOptions);
+  
+layer1.setMap(map);
+layer2.setMap(map);
+  
+var icons = {
+  lighthouse: {
+    name: 'Lighthouse',
+    icon: 'http://maps.google.com/mapfiles/kml/shapes/lighthouse.png'
+  },
+  shipwreck: {
+    name: 'Shipwreck',
+    icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-blank.png'
+  }
+}
+  
+var legend = document.getElementById('legend');
+for (var key in icons) {
+  var type = icons[key];
+  var name = type.name;
+  var icon = type.icon;
+  var div = document.createElement('div');
+  div.innerHTML = '<img src="' + icon + '"> ' + name;
+  legend.appendChild(div);
+}
+  
+map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+  
 }
