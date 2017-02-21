@@ -21,9 +21,6 @@ h2 {
   font-weight: 400;
   letter-spacing: -0.5px;
 }
-InfoWindow {
-  background-color: #666699;
-}
 #sub {
   font-size: 1.50em;
   font-size: 150%;
@@ -68,15 +65,17 @@ InfoWindow {
   font-variant: normal;
   text-align: center;
 }
+#googft-info-window {
+  background-color: #f0f0f5; 
+  border: 2px solid #400080; 
+  outline-style: double; 
+  outline-color: #666699;
+}
 #lighthouses-info-window {
   overflow-y: auto;
   text-align: center;
   font-family: "Garamond", "Times New Roman", Times, serif;
-  background-color: #f0f0f5;
   margin: 0px;
-  border: 2px solid #400080;
-  outline-style: double;
-  outline-color:#666699;
 }
 #lighthouses-info-window h4 {
   font-family: "Arial";
@@ -87,11 +86,7 @@ InfoWindow {
 #shipwrecks-info-window {
   text-align: center;
   font-family: "Garamond", "Times New Roman", Times, serif;
-  background-color: #f0f0f5;
   margin: 0px;
-  border: 2px solid #400080;
-  outline-style: double;
-  outline-color:#666699;
 }
 #shipwrecks-info-window h4 {
   font-family: "Arial";
