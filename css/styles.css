@@ -35,6 +35,9 @@ h2 {
 .lighthouses-info-window h4 {
   font-size: 0.75em;
   letter-spacing: -0.75px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
 }
 .shipwrecks-info-window {
   text-align: center;
