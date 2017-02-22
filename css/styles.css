@@ -31,6 +31,7 @@ h2 {
 .lighthouses-info-window h3 {
   font-family: "Arial";
   letter-spacing: -0.75px;
+  padding-top: 0px;
 }
 .lighthouses-info-window h4 {
   font-size: 0.75em;
@@ -43,14 +44,20 @@ h2 {
   text-align: center;
   font-family: "Garamond", "Times New Roman", Times, serif;
   font-size: 1.25em;
+  padding: 0px;
+  margin: 0px;
 }
 .shipwrecks-info-window h3 {
   font-family: "Arial";
   letter-spacing: -0.75px;
+  margin-top: 0px;
 }
 .shipwrecks-info-window h4 {
   font-size: 0.75em;
   letter-spacing: -0.75px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
 }
 #sub {
   font-size: 1.50em;
