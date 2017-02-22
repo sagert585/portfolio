@@ -26,11 +26,11 @@ h2 {
   font-family: "Garamond", "Times New Roman", Times, serif;
   font-size: 1.25em;
 }
-.lighthouses-info-window h4 {
+.lighthouses-info-window h3 {
   font-family: "Arial";
   letter-spacing: -0.75px;
 }
-.lighthouses-info-window h3 {
+.lighthouses-info-window h4 {
   font-size: 0.75em;
   letter-spacing: -0.75px;
 }
@@ -39,11 +39,11 @@ h2 {
   font-family: "Garamond", "Times New Roman", Times, serif;
   font-size: 1.25em;
 }
-.shipwrecks-info-window h4 {
+.shipwrecks-info-window h3 {
   font-family: "Arial";
   letter-spacing: -0.75px;
 }
-.shipwrecks-info-window h3 {
+.shipwrecks-info-window h4 {
   font-size: 0.75em;
   letter-spacing: -0.75px;
 }
