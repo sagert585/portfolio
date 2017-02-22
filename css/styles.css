@@ -21,6 +21,19 @@ h2 {
   font-weight: 400;
   letter-spacing: -0.5px;
 }
+div.googft-info-window {
+  text-align: center;
+  font-family: "Garamond", "Times New Roman", Times, serif;
+  font-size: 1.25em;
+  background-color: #f0f0f5; 
+  border: 2px solid #400080; 
+  outline-style: double; 
+  outline-color: #666699;
+}
+div.googft-info-window h4 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
+}
 #sub {
   font-size: 1.50em;
   font-size: 150%;
@@ -65,37 +78,24 @@ h2 {
   font-variant: normal;
   text-align: center;
 }
-div.googft-info-window {
-  text-align: center;
-  font-family: "Garamond", "Times New Roman", Times, serif;
-  font-size: 1.25em;
-  background-color: #f0f0f5; 
-  border: 2px solid #400080; 
-  outline-style: double; 
-  outline-color: #666699;
-}
-div.googft-info-window h4 {
-  font-family: "Arial";
-  letter-spacing: -0.75px;
-}
-#lighthouses-info-window {
+#Xlighthouses-info-window {
   overflow-y: auto;
   text-align: center;
   font-family: "Garamond", "Times New Roman", Times, serif;
   margin: 0px;
 }
-#lighthouses-info-window h4 {
+#Xlighthouses-info-window h4 {
   font-family: "Arial";
   letter-spacing: -0.75px;
   font-size: 1.25em;
   padding-top: 0px;
 }
-#shipwrecks-info-window {
+#Xshipwrecks-info-window {
   text-align: center;
   font-family: "Garamond", "Times New Roman", Times, serif;
   margin: 0px;
 }
-#shipwrecks-info-window h4 {
+#Xshipwrecks-info-window h4 {
   font-family: "Arial";
   letter-spacing: -0.75px;
   font-size: 1.25em;
