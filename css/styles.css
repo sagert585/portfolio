@@ -31,8 +31,10 @@ h2 {
 .lighthouses-info-window h3 {
   font-family: "Arial";
   letter-spacing: -0.75px;
-  padding: 1px;
-  margin: 1px;
+  padding-top: 1.5px;
+  padding-bottom: 0px;
+  margin-top: 1.5px;
+  margin-bottom: 0px;
 }
 .lighthouses-info-window h4 {
   font-size: 0.75em;
