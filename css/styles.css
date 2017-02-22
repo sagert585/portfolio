@@ -21,70 +21,6 @@ h2 {
   font-weight: 400;
   letter-spacing: -0.5px;
 }
-.info-window {
-  background-color: #666699;
-}
-infoWindow {
-  background-color: #666699;
-}
-InfoWindow {
-  background-color: #666699;
-}
-infoBox {
-  background-color: #666699;
-}
-.infoBox {
-  background-color: #666699;
-}
-#infoBox {
-  background-color: #666699;
-}
-#InfoWindow {
-  background-color: #666699;
-}
-#infoWindow {
-  background-color: #666699;
-}
-.InfoWindow {
-  background-color: #666699;
-}
-InfoBox {
-  background-color: #666699;
-}
-.InfoBox {
-  background-color: #666699;
-}
-#InfoBox {
-  background-color: #666699;
-}
-google.maps.InfoWindow {
-  background-color: #666699;
-}
-.google.maps.InfoWindow  {
-  background-color: #666699;
-}
-.infoWindowHtml {
-  background-color: #666699;
-}
-infoWindowHtml {
-  background-color: #666699;
-}
-#infoWindowHtml {
-  background-color: #666699;
-}
-div.googft-info-window {
-  text-align: center;
-  font-family: "Garamond", "Times New Roman", Times, serif;
-  font-size: 1.25em;
-  background-color: #f0f0f5; 
-  border: 2px solid #400080; 
-  outline-style: double; 
-  outline-color: #666699;
-}
-div.googft-info-window h4 {
-  font-family: "Arial";
-  letter-spacing: -0.75px;
-}
 .lighthouses-info-window {
   text-align: center;
   font-family: "Garamond", "Times New Roman", Times, serif;
@@ -94,6 +30,10 @@ div.googft-info-window h4 {
   font-family: "Arial";
   letter-spacing: -0.75px;
 }
+.lighthouses-info-window h3 {
+  font-size: 0.75em;
+  letter-spacing: -0.75px;
+}
 .shipwrecks-info-window {
   text-align: center;
   font-family: "Garamond", "Times New Roman", Times, serif;
@@ -101,6 +41,10 @@ div.googft-info-window h4 {
 }
 .shipwrecks-info-window h4 {
   font-family: "Arial";
+  letter-spacing: -0.75px;
+}
+.shipwrecks-info-window h3 {
+  font-size: 0.75em;
   letter-spacing: -0.75px;
 }
 #sub {
