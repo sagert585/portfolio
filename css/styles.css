@@ -57,6 +57,21 @@ InfoBox {
 #InfoBox {
   background-color: #666699;
 }
+google.maps.InfoWindow {
+  background-color: #666699;
+}
+.google.maps.InfoWindow  {
+  background-color: #666699;
+}
+.infoWindowHtml {
+  background-color: #666699;
+}
+infoWindowHtml {
+  background-color: #666699;
+}
+#infoWindowHtml {
+  background-color: #666699;
+}
 div.googft-info-window {
   text-align: center;
   font-family: "Garamond", "Times New Roman", Times, serif;
