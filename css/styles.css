@@ -21,6 +21,21 @@ h2 {
   font-weight: 400;
   letter-spacing: -0.5px;
 }
+.info-window {
+  background-color: #666699;
+}
+infoWindow {
+  background-color: #666699;
+}
+InfoWindow {
+  background-color: #666699;
+}
+infoBox {
+  background-color: #666699;
+}
+.infoBox {
+  background-color: #666699;
+}
 div.googft-info-window {
   text-align: center;
   font-family: "Garamond", "Times New Roman", Times, serif;
