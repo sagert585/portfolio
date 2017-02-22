@@ -1,0 +1,188 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #666699;
+  font-family: "Garamond", "Times New Roman", Times, serif;
+}
+h1 {
+  font-family: "Arial";
+  font-size: 2.25em;
+  font-variant: small-caps;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+h2 {
+  font-family: "Arial Narrow";
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+.info-window {
+  background-color: #666699;
+}
+infoWindow {
+  background-color: #666699;
+}
+InfoWindow {
+  background-color: #666699;
+}
+infoBox {
+  background-color: #666699;
+}
+.infoBox {
+  background-color: #666699;
+}
+#infoBox {
+  background-color: #666699;
+}
+#InfoWindow {
+  background-color: #666699;
+}
+#infoWindow {
+  background-color: #666699;
+}
+.InfoWindow {
+  background-color: #666699;
+}
+InfoBox {
+  background-color: #666699;
+}
+.InfoBox {
+  background-color: #666699;
+}
+#InfoBox {
+  background-color: #666699;
+}
+google.maps.InfoWindow {
+  background-color: #666699;
+}
+.google.maps.InfoWindow  {
+  background-color: #666699;
+}
+.infoWindowHtml {
+  background-color: #666699;
+}
+infoWindowHtml {
+  background-color: #666699;
+}
+#infoWindowHtml {
+  background-color: #666699;
+}
+div.googft-info-window {
+  text-align: center;
+  font-family: "Garamond", "Times New Roman", Times, serif;
+  font-size: 1.25em;
+  background-color: #f0f0f5; 
+  border: 2px solid #400080; 
+  outline-style: double; 
+  outline-color: #666699;
+}
+div.googft-info-window h4 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
+}
+.lighthouses-info-window {
+  text-align: center;
+  font-family: "Garamond", "Times New Roman", Times, serif;
+  font-size: 1.25em;
+}
+.lighthouses-info-window h4 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
+}
+.shipwrecks-info-window {
+  text-align: center;
+  font-family: "Garamond", "Times New Roman", Times, serif;
+  font-size: 1.25em;
+}
+.shipwrecks-info-window h4 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
+}
+#sub {
+  font-size: 1.50em;
+  font-size: 150%;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+#main {
+  width: 60%;
+  margin: auto;
+  background-color: #f0f0f5;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 1px;
+}
+#map_canvas {
+  width: 80%;
+  height: 75%;
+  margin: auto;
+  border: 1px solid #f0f0f5;
+  outline-style: double;
+  outline-color: #400080;
+}
+#legend {
+  font-family: "Garamond", "Times New Roman", Times, serif;
+  font-size: 1.25em;
+  background-color: #f0f0f5;
+  margin: 10px;
+  padding-right: 10px;
+  border: 1px solid #400080;
+  outline-style: double;
+  outline-color: #666699;
+}
+#legend img {
+  transform: scale(0.5);
+  vertical-align: middle;
+}
+#legend h3 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
+  font-variant: normal;
+  text-align: center;
+}
+#Xlighthouses-info-window {
+  overflow-y: auto;
+  text-align: center;
+  font-family: "Garamond", "Times New Roman", Times, serif;
+  margin: 0px;
+}
+#Xlighthouses-info-window h4 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
+  font-size: 1.25em;
+  padding-top: 0px;
+}
+#Xshipwrecks-info-window {
+  text-align: center;
+  font-family: "Garamond", "Times New Roman", Times, serif;
+  margin: 0px;
+}
+#Xshipwrecks-info-window h4 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
+  font-size: 1.25em;
+  padding-top: 0px;
+}
+a:link {
+  color: #59804d;
+  text-decoration: none;
+}
+a:visited {
+  color: #400080;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: #8000ff;
+}
+a.raw {
+  font-size: 0.75em;
+}
