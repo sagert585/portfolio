@@ -34,6 +34,24 @@ div.googft-info-window h4 {
   font-family: "Arial";
   letter-spacing: -0.75px;
 }
+.lighthouses-info-window {
+  text-align: center;
+  font-family: "Garamond", "Times New Roman", Times, serif;
+  font-size: 1.25em;
+}
+.lighthouses-info-window h4 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
+}
+.shiprecks-info-window {
+  text-align: center;
+  font-family: "Garamond", "Times New Roman", Times, serif;
+  font-size: 1.25em;
+}
+.shipwrecks-info-window h4 {
+  font-family: "Arial";
+  letter-spacing: -0.75px;
+}
 #sub {
   font-size: 1.50em;
   font-size: 150%;
