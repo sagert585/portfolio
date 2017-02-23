@@ -205,7 +205,7 @@ layer1.setMap(map);
 layer2.setMap(map);
   
 layer1.enableMapTips({
-  select: 'Lighthouse',
+  select: "'Lighthouse'",
   from: '1pjK3l1oa8rLG56mQYlsmTZjocpICznvDR778RnHi',
   geometryColumn: 'Lat',
   suppressMapTips: false,
