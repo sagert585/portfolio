@@ -180,7 +180,8 @@ var layer1 = new google.maps.FusionTablesLayer({
       options: {
         styleId: 2,
         templateId: 2
-      }
+      },
+      title: "col0"
     });
   
 var layer2 = new google.maps.FusionTablesLayer({
