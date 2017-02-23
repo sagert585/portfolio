@@ -197,6 +197,19 @@ var layer2 = new google.maps.FusionTablesLayer({
       }
     });
   
+layer1.enableMapTips({
+  select: "col0",
+  from: "1pjK3l1oa8rLG56mQYlsmTZjocpICznvDR778RnHi",
+  geometryColumn: "col2",
+  suppressMapTips: true,
+  delay: 1,
+  tolerance: 6
+});  
+  
+google.maps.event.addListener(layer, 'mouseover', function(fEvent) {
+  var NumBal = fEvent.row['col2'].value
+  });
+                              
 var map = new google.maps.Map(
   document.getElementById("map_canvas"),
   mapOptions);
