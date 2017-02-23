@@ -206,8 +206,8 @@ layer1.enableMapTips({
   tolerance: 6
 });  
   
-google.maps.event.addListener(layer, 'mouseover', function(fEvent) {
-  var NumBal = fEvent.row['col2'].value
+google.maps.event.addListener(layer1, 'mouseover', function(fEvent) {
+  var NumVal = fEvent.row['col2'].value
   });
                               
 var map = new google.maps.Map(
