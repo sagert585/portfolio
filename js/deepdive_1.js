@@ -197,19 +197,6 @@ var layer2 = new google.maps.FusionTablesLayer({
       }
     });
   
-layer1.enableMapTips({
-  select: "col0",
-  from: "1pjK3l1oa8rLG56mQYlsmTZjocpICznvDR778RnHi",
-  geometryColumn: "col2",
-  suppressMapTips: true,
-  delay: 1,
-  tolerance: 6
-});  
-  
-google.maps.event.addListener(layer1, 'mouseover', function(fEvent) {
-  var NumVal = fEvent.row['col2'].value
-  });
-                              
 var map = new google.maps.Map(
   document.getElementById("map_canvas"),
   mapOptions);
@@ -217,6 +204,33 @@ var map = new google.maps.Map(
 layer1.setMap(map);
 layer2.setMap(map);
   
+layer1.enableMapTips({
+  select: 'Lighthouse',
+  from: '1pjK3l1oa8rLG56mQYlsmTZjocpICznvDR778RnHi',
+  geometryColumn: 'Lat',
+  suppressMapTips: false,
+  delay: 1,
+  tolerance: 6
+});  
+
+addListeners();
+  
+function addListeners() {
+  google.maps.event.addListener(layer1, 'mouseover', function(fEvent) {
+  var row = fEvent.row;
+  myHtml = 'mouseover:<br/>';
+  for (var x in row) {
+    if (row.hasOwnProperty(x)) {
+      myHtml += '<b>' + x + "</b>:" + row[x].value + "<br/>";
+    }
+  }
+    document.getElementById('info').innerHTML = myHTML;
+  });
+  google.maps.event.addListener(layer1, 'mouseout', function(fevt) {
+    document.getElementById('info').innerHTML = '';
+  });
+}
+                              
 var icons = {
   lighthouse: {
     name: 'Lighthouse',
