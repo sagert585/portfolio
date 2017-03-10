@@ -213,15 +213,15 @@ layer2.setMap(map);
 var icons = {
   lighthouse: {
     name: 'Lighthouse',
-    icon: 'http://maps.google.com/mapfiles/kml/shapes/lighthouse.png'
+    icon: 'https://maps.google.com/mapfiles/kml/shapes/lighthouse.png'
   },
   shipwreck: {
     name: 'Shipwreck',
-    icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-blank.png'
+    icon: 'https://maps.google.com/mapfiles/kml/paddle/orange-blank.png'
   },
   personal: {
     name: 'Memories',
-    icon: 'http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png'
+    icon: 'https://maps.google.com/mapfiles/kml/paddle/purple-blank.png'
   }
 }
   
@@ -238,7 +238,7 @@ for (var key in icons) {
 map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
   
 var newicon = {
-  url: 'http://maps.google.com/mapfiles/kml/paddle/purple-blank.png',
+  url: 'https://maps.google.com/mapfiles/kml/paddle/purple-blank.png',
   scaledSize: new google.maps.Size(32, 32)
 };
   
