@@ -1,5 +1,10 @@
 function initialize() {
   var islands2 = new google.maps.LatLng(46.916668,-90.672922)
+  var bigtop = new google.maps.LatLng(46.777852, -90.893602)
+  var flats = new google.maps.LatLng(46.725625, -90.601327)
+  var camp = new google.maps.LatLng(46.805048, -90.836346)
+  var orchard = new google.maps.LatLng(46.831578, -90.836273)
+  var pier = new google.maps.LatLng(46.810883, -90.811626)
   var mapOptions = {
     zoom: 10,
     center: islands2,
@@ -284,6 +289,10 @@ var icons = {
   shipwreck: {
     name: 'Shipwreck',
     icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-blank.png'
+  },
+  personal: {
+    name: 'Memories',
+    icon: 'https://maps.google.com/mapfiles/kml/paddle/purple-blank.png'
   }
 }
   
@@ -298,5 +307,41 @@ for (var key in icons) {
 }
   
 map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+
+var newicon = {
+  url: 'https://maps.google.com/mapfiles/kml/paddle/purple-blank.png',
+  scaledSize: new google.maps.Size(32, 32)
+};
+  
+var bigtopMarker = new google.maps.Marker({
+  position: bigtop,
+  title: "Big Top Chautauqua",
+  icon: newicon
+});
+bigtopMarker.setMap(map);
+var flatsMarker = new google.maps.Marker({
+  position: flats,
+  title: "The Flats: A cooler full of root beer meant a day of fishing with my uncles.",
+  icon: newicon
+});
+flatsMarker.setMap(map);
+var campMarker = new google.maps.Marker({
+  position: camp,
+  title: "At the campground, every day started with stacks of my aunt's pancakes.",
+  icon: newicon
+});
+campMarker.setMap(map);
+var orchardMarker = new google.maps.Marker({
+  position: orchard,
+  title: "Orchard country, where regular customers can trade freshly caught lake trout for freshly picked raspberries.",
+  icon: newicon
+});
+orchardMarker.setMap(map);
+var pierMarker = new google.maps.Marker({
+  position: pier,
+  title: "The Pier: Perfect for an after-dinner walk with an ice cream cone.",
+  icon: newicon
+});
+pierMarker.setMap(map);  
   
 }
