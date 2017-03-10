@@ -255,7 +255,7 @@ var flatsMarker = new google.maps.Marker({
 flatsMarker.setMap(map);
 var campMarker = new google.maps.Marker({
   position: camp,
-  title: "At the campground, every day started with stacks of my aunt's pancakes<br>and ended with desserts made with fresh, local berries.",
+  title: "At the campground, every day started with stacks of my aunt's pancakes" + '<br>' + "and ended with desserts made with fresh, local berries.",
   icon: newicon
 });
 campMarker.setMap(map);
