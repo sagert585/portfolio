@@ -220,7 +220,7 @@ var icons = {
     icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-blank.png'
   },
   personal: {
-    name: 'Childhood<br>Memories',
+    name: 'Memories',
     icon: 'http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png'
   }
 }
