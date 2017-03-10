@@ -240,31 +240,26 @@ map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
 var bigtopMarker = new google.maps.Marker({
   position: bigtop,
   title: "Big Top Chautauqua"
-  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
 });
 bigtopMarker.setMap(map);
 var flatsMarker = new google.maps.Marker({
   position: flats,
   title: "The Flats: A cooler full of root beer meant a day of fishing with my uncles."
-  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
 });
 flatsMarker.setMap(map);
 var campMarker = new google.maps.Marker({
   position: camp,
   title: "At the campground, every day started with stacks of my aunt's pancakes and ended with desserts made with fresh, local berries."
-  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
 });
 campMarker.setMap(map);
 var orchardMarker = new google.maps.Marker({
   position: orchard,
   title: "Orchard country, where regular customers can trade freshly caught lake trout for freshly picked fruit."
-  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
 });
 orchardMarker.setMap(map);
 var pierMarker = new google.maps.Marker({
   position: pier,
   title: "The Pier: Perfect for an after-dinner walk with an ice cream cone."
-  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
 });
 pierMarker.setMap(map);
 
