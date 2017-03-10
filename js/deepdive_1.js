@@ -213,6 +213,10 @@ var icons = {
   shipwreck: {
     name: 'Shipwreck',
     icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-blank.png'
+  },
+  personal: {
+    name: 'Childhood Memories',
+    icon: 'http://maps.google.com/mapfiles/kml/paddle/ylw-blank-lv.png'
   }
 }
   
@@ -228,4 +232,38 @@ for (var key in icons) {
   
 map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
   
+function addMarker(feature) {
+  var marker = new google.maps.Marker({
+    position: feature.position,
+    icon: icons[feature.type].icon,
+    map: map
+  });
+}
+  
+var features = [
+  {
+    position: new google.maps.LatLng(46.777852, -90.893602),
+    type: 'personal',
+    title: "Big Top Chautauqua"
+  }, {
+    position: new google.maps.LatLng(46.725625, -90.601327),
+    type: 'personal',
+    title: "The Flats: A cooler full of root beer meant a day of fishing with my uncles."
+  }, {
+    position: new google.maps.LatLng(46.805048, -90.836346),
+    type: 'personal',
+    title: "Apostle Islands Area Campground: Every day started with stacks of my aunt's pancakes and ended with desserts made with fresh, local berries."
+  }, {
+    position: new google.maps.LatLng(46.831578, -90.836273),
+    type: 'personal',
+    title: "Orchard country, where regular customers can trade freshly caught lake trout for freshly picked fruit."
+  }, {
+    position: new google.maps.LatLng(46.810883, -90.811626),
+    type: 'personal',
+    title: "The Pier: Perfect for an after-dinner walk with an ice cream cone."
+  }
+  ];
+for (var i = 0, feature; feature = features[i]; i++) {
+  addMarker(feature);
+}
 }
