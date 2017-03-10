@@ -228,16 +228,4 @@ for (var key in icons) {
   
 map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
   
-var ftKey = "AIzaSyCq0FA_YBKkkm-8-U-J2L1Q8ICmM7_jP3g";
-  
-layer1.enableMapTips({
-  key: ftKey,
-  select: "col0",
-  from: "1pjK3l1oa8rLG56mQYlsmTZjocpICznvDR778RnHi",
-  geometryColumn: 'Lat',
-  suppressMapTips: false,
-  delay: 100,
-  tolerance: 6
-});
-  
 }
