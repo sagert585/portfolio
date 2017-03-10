@@ -239,7 +239,6 @@ map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
   
 var newicon = {
   url: 'http://maps.google.com/mapfiles/kml/paddle/purple-blank.png',
-  size: 50%,
 };
   
 var bigtopMarker = new google.maps.Marker({
