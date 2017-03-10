@@ -239,6 +239,7 @@ map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
   
 var newicon = {
   url: 'http://maps.google.com/mapfiles/kml/paddle/purple-blank.png',
+  scaledSize: new google.maps.Size(24, 24)
 };
   
 var bigtopMarker = new google.maps.Marker({
@@ -255,13 +256,13 @@ var flatsMarker = new google.maps.Marker({
 flatsMarker.setMap(map);
 var campMarker = new google.maps.Marker({
   position: camp,
-  title: "At the campground, every day started with stacks of my aunt's pancakes" + '<br>' + "and ended with desserts made with fresh, local berries.",
+  title: "At the campground, every day started with stacks of my aunt's pancakes.",
   icon: newicon
 });
 campMarker.setMap(map);
 var orchardMarker = new google.maps.Marker({
   position: orchard,
-  title: "Orchard country, where regular customers can trade freshly caught lake trout for freshly picked fruit.",
+  title: "Orchard country, where regular customers can trade freshly caught lake trout for freshly picked raspberries.",
   icon: newicon
 });
 orchardMarker.setMap(map);
