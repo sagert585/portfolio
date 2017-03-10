@@ -239,7 +239,7 @@ map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
   
 var newicon = {
   url: 'http://maps.google.com/mapfiles/kml/paddle/purple-blank.png',
-  size: new google.maps.Size(24, 24)
+  size: 50%,
 };
   
 var bigtopMarker = new google.maps.Marker({
