@@ -1,5 +1,10 @@
 function initialize() {
   var islands2 = new google.maps.LatLng(46.916668,-90.672922)
+  var bigtop = new google.maps.LatLng(46.777852, -90.893602)
+  var flats = new google.maps.LatLng(46.725625, -90.601327)
+  var camp = new google.maps.LatLng(46.805048, -90.836346)
+  var orchard = new google.maps.LatLng(46.831578, -90.836273)
+  var pier = new google.maps.LatLng(46.810883, -90.811626)
   var mapOptions = {
     zoom: 10,
     center: islands2,
@@ -215,8 +220,8 @@ var icons = {
     icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-blank.png'
   },
   personal: {
-    name: 'Childhood Memories',
-    icon: 'http://maps.google.com/mapfiles/kml/paddle/ylw-blank-lv.png'
+    name: 'Childhood<br>Memories',
+    icon: 'http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png'
   }
 }
   
@@ -232,38 +237,35 @@ for (var key in icons) {
   
 map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
   
-function addMarker(feature) {
-  var marker = new google.maps.Marker({
-    position: feature.position,
-    icon: icons[feature.type].icon,
-    map: map
-  });
-}
-  
-var features = [
-  {
-    position: new google.maps.LatLng(46.777852, -90.893602),
-    type: 'personal',
-    title: "Big Top Chautauqua"
-  }, {
-    position: new google.maps.LatLng(46.725625, -90.601327),
-    type: 'personal',
-    title: "The Flats: A cooler full of root beer meant a day of fishing with my uncles."
-  }, {
-    position: new google.maps.LatLng(46.805048, -90.836346),
-    type: 'personal',
-    title: "Apostle Islands Area Campground: Every day started with stacks of my aunt's pancakes and ended with desserts made with fresh, local berries."
-  }, {
-    position: new google.maps.LatLng(46.831578, -90.836273),
-    type: 'personal',
-    title: "Orchard country, where regular customers can trade freshly caught lake trout for freshly picked fruit."
-  }, {
-    position: new google.maps.LatLng(46.810883, -90.811626),
-    type: 'personal',
-    title: "The Pier: Perfect for an after-dinner walk with an ice cream cone."
-  }
-  ];
-for (var i = 0, feature; feature = features[i]; i++) {
-  addMarker(feature);
-}
+var bigtopMarker = new google.maps.Marker({
+  position: bigtop,
+  title: "Big Top Chautauqua"
+  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
+});
+bigtopMarker.setMap(map);
+var flatsMarker = new google.maps.Marker({
+  position: flats,
+  title: "The Flats: A cooler full of root beer meant a day of fishing with my uncles."
+  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
+});
+flatsMarker.setMap(map);
+var campMarker = new google.maps.Marker({
+  position: camp,
+  title: "At the campground, every day started with stacks of my aunt's pancakes and ended with desserts made with fresh, local berries."
+  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
+});
+campMarker.setMap(map);
+var orchardMarker = new google.maps.Marker({
+  position: orchard,
+  title: "Orchard country, where regular customers can trade freshly caught lake trout for freshly picked fruit."
+  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
+});
+orchardMarker.setMap(map);
+var pierMarker = new google.maps.Marker({
+  position: pier,
+  title: "The Pier: Perfect for an after-dinner walk with an ice cream cone."
+  icon: "http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png"
+});
+pierMarker.setMap(map);
+
 }
