@@ -26,7 +26,8 @@ function initialize() {
       'National Parks Service' + 
       '</a></p></div>';
   var infoWindow = new google.maps.InfoWindow({
-    content: infoContent
+    content: infoContent,
+    position: center
   });
   google.maps.event.addListener(marker, 'click', function() {
     infoWindow.open(map,marker);
