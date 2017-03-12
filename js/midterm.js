@@ -10,13 +10,15 @@ function initialize() {
     document.getElementById("map_canvas_mid"),
     mapOptions);
   var icon = {
-    url: 'http://maps.google.com/mapfiles/kml/shapes/target.png'
+    url: 'https://maps.google.com/mapfiles/kml/shapes/target.png',
+    size: new google.maps.Size(64,64),
+    origin: new google.maps.Point(0,0),
+    anchor: new google.maps.Point(32,32)
   }
   var marker = new google.maps.Marker({
     position: center,
     map: map,
     title: "Pueblo Bonito",
-    icon: icon,
-    anchor: new google.maps.Point(32,32)
+    icon: icon
   });
 }
