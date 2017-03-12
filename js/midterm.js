@@ -21,4 +21,14 @@ function initialize() {
     title: "Pueblo Bonito",
     icon: icon
   });
+  var infoContent = '<div class="infoBox">' + 
+      '<p><a href="https://www.nps.gov/chcu/planyourvisit/pueblo-bonito.htm">' + 
+      'National Parks Service' + 
+      '</a></p></div>';
+  var infoWindow = new google.maps.InfoWindow({
+    content: infoContent
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infoWindow.open(map,marker);
+  });
 }
