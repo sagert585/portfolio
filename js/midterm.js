@@ -8,10 +8,13 @@ function initialize() {
   var map = new google.maps.Map(
     document.getElementById("map_canvas_mid"),
     mapOptions);
-  
+  var icon = {
+    url: 'http://maps.google.com/mapfiles/kml/shapes/target.png'
+  }
   var marker = new google.maps.Marker({
     position: midterm,
     map: map,
-    title: "Pueblo Bonito"
+    title: "Pueblo Bonito",
+    icon: icon
   });
 }
