@@ -22,7 +22,7 @@ function initialize() {
     icon: icon
   });
   var infoContent = '<div class="infoBox">' + 
-      '<p><a href="https://www.nps.gov/chcu/planyourvisit/pueblo-bonito.htm">' + 
+      '<p><a href="https://www.nps.gov/chcu/planyourvisit/pueblo-bonito.htm" target="_blank">' + 
       'National Parks Service' + 
       '</a></p></div>';
   var infoWindow = new google.maps.InfoWindow({
