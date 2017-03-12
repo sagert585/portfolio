@@ -99,6 +99,14 @@ h2 {
   outline-style: double;
   outline-color: #400080;
 }
+#map_canvas_mid {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  border: 1px solid #f0f0f5;
+  outline-style: double;
+  outline-color: #400080;
+}
 #legend {
   font-family: "Garamond", "Times New Roman", Times, serif;
   font-size: 1.25em;
