@@ -16,7 +16,7 @@ function initialize() {
     anchor: new google.maps.Point(32,32)
   }
   var marker = new google.maps.Marker({
-    position: center,
+    position: midterm,
     map: map,
     title: "Pueblo Bonito",
     icon: icon
