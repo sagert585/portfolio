@@ -34,7 +34,7 @@ function setMapType(newType) {
     } else if (newType == 'STAMEN_Watercolor') {
         map.setLayerGroup(Layer_Stamen_watercolor);
     } else if (newType == 'STAMEN_Burningmap') {
-      map.setLayerGroup(Layer_Stamen_burningmap);
+        map.setLayerGroup(Layer_Stamen_burningmap);
     }
 }
 
