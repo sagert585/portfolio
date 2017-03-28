@@ -38,4 +38,4 @@ function setMapType(newType) {
     }
 }
 
-setMapType('STAMEN_Burningmap')
+setMapType('STAMEN_Watercolor')
