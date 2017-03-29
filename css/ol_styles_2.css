@@ -103,7 +103,7 @@ a:active {
 a.raw {
   font-size: 0.75em;
 }
-.button:link {
+a.button:link {
   color: #59804d;
   text-decoration: none;
   display: inline-block;
@@ -113,14 +113,14 @@ a.raw {
   outline-style: double;
   outline-color: #59804d;
 }
-.button:visited {
+a.button:visited {
   color: #400080;
   outline-color: #400080;
 }
-.button:hover {
+a.button:hover {
   text-decoration: underline;
 }
-.button:active {
+a.button:active {
   color: #8000ff;
   outline-color: #8000ff;
 }
