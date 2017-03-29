@@ -124,4 +124,26 @@ a.button:active {
   color: #8000ff;
   outline-color: #8000ff;
 }
+#map_control a:link {
+  color: #59804d;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #666699;
+  padding: 10px 15px;
+  border: 1px solid #400080;
+  outline-style: double;
+  outline-color: #59804d;
+}
+#map_control a:visited {
+  color: #400080;
+  outline-color: #400080;
+}
+#map_control a:hover {
+  text-decoration: underline;
+}
+#map_control a:active {
+  color: #8000ff;
+  outline-color: #8000ff;
+}
   
+
