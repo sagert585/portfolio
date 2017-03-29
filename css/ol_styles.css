@@ -54,6 +54,11 @@ h2 {
   outline-style: double;
   outline-color: #400080;
 }
+#map_controls {
+  position: absolute;
+  top: 20px;
+  right: 20px:
+}
 #legend {
   font-family: "Garamond", "Times New Roman", Times, serif;
   font-size: 1.25em;
