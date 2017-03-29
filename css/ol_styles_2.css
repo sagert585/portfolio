@@ -64,6 +64,7 @@ h2 {
 }
 #map_control {
   position: relative;
+  margin: auto;
   z-index: 101;
 }
 #legend {
@@ -124,20 +125,21 @@ a.button:active {
   color: #8000ff;
   outline-color: #8000ff;
 }
-#map_control span {
+.button {
   color: #59804d;
   text-decoration: none;
   display: inline-block;
-  background-color: #666699;
-  padding: 10px 15px;
-  border: 1px solid #400080;
+  background-color: #f0f0f5;
+  padding: 5px 10px;
+  border: 1px solid #666699;
   outline-style: double;
   outline-color: #59804d;
 }
-#map_control span:hover {
+.button:hover {
   text-decoration: underline;
+  font-weight: 700;
 }
-#map_control span:active {
+button:active {
   color: #8000ff;
   outline-color: #8000ff;
 }
