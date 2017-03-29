@@ -65,6 +65,7 @@ h2 {
 #map_control {
   position: relative;
   margin: auto;
+  text-align: center;
   z-index: 101;
 }
 #legend {
@@ -134,10 +135,11 @@ a.button:active {
   border: 1px solid #666699;
   outline-style: double;
   outline-color: #59804d;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .button:hover {
   text-decoration: underline;
-  font-weight: 700;
 }
 button:active {
   color: #8000ff;
