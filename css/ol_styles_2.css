@@ -140,10 +140,12 @@ a.button:active {
 }
 .button:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
-button:active {
+.button:active {
   color: #8000ff;
   outline-color: #8000ff;
+  cursor: wait;
 }
   
 
