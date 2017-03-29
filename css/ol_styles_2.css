@@ -124,7 +124,7 @@ a.button:active {
   color: #8000ff;
   outline-color: #8000ff;
 }
-#map_control a:link {
+#map_control span {
   color: #59804d;
   text-decoration: none;
   display: inline-block;
@@ -134,14 +134,10 @@ a.button:active {
   outline-style: double;
   outline-color: #59804d;
 }
-#map_control a:visited {
-  color: #400080;
-  outline-color: #400080;
-}
-#map_control a:hover {
+#map_control span:hover {
   text-decoration: underline;
 }
-#map_control a:active {
+#map_control span:active {
   color: #8000ff;
   outline-color: #8000ff;
 }
