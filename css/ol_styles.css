@@ -53,10 +53,11 @@ h2 {
   border: 1px solid #f0f0f5;
   outline-style: double;
   outline-color: #400080;
+  z-index: 100;
 }
 #map_controls {
   position: relative;
-  z-index: 999;
+  z-index: 101;
   top: 20px;
   right: 20px:
 }
