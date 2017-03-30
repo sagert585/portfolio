@@ -102,29 +102,11 @@ a:hover {
 a:active {
   color: #8000ff;
 }
-a.raw {
-  font-size: 0.75em;
+.link_bar {
+  text-align: center;
 }
-a.button:link {
-  color: #59804d;
-  text-decoration: none;
+.link_bar a:link {
   display: inline-block;
-  background-color: #666699;
-  padding: 10px 15px;
-  border: 1px solid #400080;
-  outline-style: double;
-  outline-color: #59804d;
-}
-a.button:visited {
-  color: #400080;
-  outline-color: #400080;
-}
-a.button:hover {
-  text-decoration: underline;
-}
-a.button:active {
-  color: #8000ff;
-  outline-color: #8000ff;
 }
 .button {
   color: #f0f0f5;
@@ -147,5 +129,3 @@ a.button:active {
   outline-color: #8000ff;
   cursor: wait;
 }
-  
-
