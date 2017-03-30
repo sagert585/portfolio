@@ -112,7 +112,7 @@ a:active {
   color: #f0f0f5;
   text-decoration: none;
   display: inline-block;
-  background-color: #59804d;
+  background-color: #400080;
   padding: 5px 10px;
   border: 1px solid #f0f0f5;
   outline-style: double;
@@ -127,5 +127,6 @@ a:active {
 .button:active {
   color: #8000ff;
   outline-color: #8000ff;
+  background-color: #59804d;
   cursor: wait;
 }
