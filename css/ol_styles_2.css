@@ -127,14 +127,14 @@ a.button:active {
   outline-color: #8000ff;
 }
 .button {
-  color: #8000ff;
+  color: #400080;
   text-decoration: none;
   display: inline-block;
   background-color: #59804d;
   padding: 5px 10px;
   border: 1px solid #666699;
   outline-style: double;
-  outline-color: #8000ff;
+  outline-color: #400080;
   margin-left: 5px;
   margin-right: 5px;
 }
