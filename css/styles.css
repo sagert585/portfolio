@@ -140,6 +140,9 @@ a:hover {
 a:active {
   color: #8000ff;
 }
-a.raw {
-  font-size: 0.75em;
+.link_bar {
+  text-align: center;
+}
+.link_bar a:link {
+  display: inline-block;
 }
