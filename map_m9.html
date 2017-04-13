@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Sagert's First OpenLayers Map</title>
+    <link rel="stylesheet" type="text/css" href="css/ol_styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.0.1/ol.css">
+    <style type=text/css>
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.0.1/ol.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <p class="link_bar"><a href="index.html">HOME</a> | <a href="hello-world.html">Milestone 1</a> | <a href="index_styled.html">Milestone 2</a> | <a href="map_m3.html">Milestone 3</a> | <a href="map_m4.html">Milestone 4</a> | <a href="deepdive_1.html">Deep Dive 1</a> | <a href="midterm.html">Midterm</a> | <a href="map_m8.html">Milestone 8</a></p>
+      <h1>585<br>Milestone Eight</h1>
+      <p id="sub" style="margin-bottom: 0px">OpenLayers Map</p>
+    </div>
+    <div id="stack">
+    <div id="map_canvas"></div>
+      <div id="map_control">
+        <p>
+          <a onclick="setMapType('STAMEN_Watercolor')"><span class="button">Watercolor</span></a>
+          <a onclick="setMapType('OSM')"><span class="button">OpenStreetMap</span></a>
+          <a id="burn" href="http://maps.stamen.com/burningmap/#15/36.5779/136.6488"><span class="button">Burn This Map</span></a>
+        </p>
+      </div>
+      <script src="js/map_m9.js" type="text/javascript"></script>
+    </div>
+    <div class="main" style="position: relative; z-index: -1;">
+      <div class="map_story">
+        <p>Coming Soon.</p>
+      </div>
+      <br><br><p align="center" style='font-size: 0.75em'>Thanks for reading. 2017.</p><br>
+    </div>
+  </body>
+</html>
