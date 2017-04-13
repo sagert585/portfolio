@@ -123,7 +123,7 @@ var states_single = new ol.layer.Image({
 
 var blocks_kml = new ol.layer.Vector({
 	source: new ol.source.Vector({
-		url: 'http://data-cabq.opendata.arcgis.com/datasets/d37560417807443fa587afe2c95a1428_45.kml',
+		url: 'https://data-cabq.opendata.arcgis.com/datasets/d37560417807443fa587afe2c95a1428_45.kml',
 		projection: projection,
 		format: new ol.format.KML()
 	})
@@ -153,7 +153,7 @@ var counties_kml_styled = new ol.layer.Vector({
 
 var blocks_kml_styled = new ol.layer.Vector({
 	source: new ol.source.Vector({
-		url: 'http://data-cabq.opendata.arcgis.com/datasets/d37560417807443fa587afe2c95a1428_45.kml',
+		url: 'https://data-cabq.opendata.arcgis.com/datasets/d37560417807443fa587afe2c95a1428_45.kml',
 		projection: projection,
 		format: new ol.format.KML({
 			extractStyles:false
