@@ -128,7 +128,7 @@ var abqhpFeature = new ol.Feature({
 var unmLayer = new ol.layer.Vector({
   source: new ol.source.Vector({
     features: [
-      unmhFeature, unmsrmncFeature
+      unmhFeature, unmsrmcFeature
       ]
   }),
   style: UNM_fac_style
