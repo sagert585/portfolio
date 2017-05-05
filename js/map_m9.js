@@ -20,6 +20,20 @@ var sha_kml = new ol.layer.Vector({
     //style: SOMETHING
 })
 
+var NM_facilities = new ol.layer.Tile({
+    source: new ol.source.TileWMNS({
+        attributions: new ol.Attribution({
+            html: 'UNM RGIS'
+        }),
+        params: {'LAYERS':'Hospitals_NursingHomes',
+                 'FORMAT':'image/png',
+                 'TRANSPARENT':'true'
+                },
+        url: 'https://rgis-data.unm.edu/ApolloCatalogWMSPublic/service.svc/get?',
+        projection: projection
+    })
+})
+                 
 var Layer_OSM = new ol.layer.Tile({
             source: new ol.source.OSM()
 });
@@ -27,7 +41,7 @@ var Layer_OSM = new ol.layer.Tile({
 var map = new ol.Map({
   target: 'map_canvas',
   layers: [
-      Layer_OSM, sha_kml
+      Layer_OSM, sha_kml, NM_facilities
       ],
   view: new ol.View({
     center: ol.proj.fromLonLat([-106.629361, 35.105380]),
