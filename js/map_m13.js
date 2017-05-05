@@ -11,7 +11,7 @@ var SPAR = new ol.layer.Tile({
       html: 'ESRI Maps & Data'
     }),
     params: {'LAYERS':'ws_ssheets:e2sfcam_blockGroups'},
-    url: 'https://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
     format: new ol.format.KML({
@@ -26,7 +26,7 @@ var SHA = new ol.layer.Tile({
       html: 'NM IBIS'
     }),
     params: {'LAYERS':'ws_ssheets:SmallAreas_ABQ_w_CancerIncidence'},
-    url: 'https://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
     format: new ol.format.KML({
@@ -41,7 +41,7 @@ var cities = new ol.layer.Tile({
       html: 'CABQ.gov'
     }),
     params: {'LAYERS':'ws_ssheets:ABQ_RR'},
-    url: 'https://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
     format: new ol.format.KML({
@@ -56,7 +56,7 @@ var hospitals = new ol.layer.Tile({
       html: 'UNM RGIS'
     }),
     params: {'LAYERS':'ws_ssheets:GeneralHospitals'},
-    url: 'https://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
     format: new ol.format.KML({
@@ -71,7 +71,7 @@ var mammograms = new ol.layer.Tile({
       html: 'ESRI Maps & Data'
     }),
     params: {'LAYERS':'ws_ssheets:MammographyFacilities'},
-    url: 'https://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
     format: new ol.format.KML({
