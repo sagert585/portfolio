@@ -1,5 +1,5 @@
-//var projection = ol.proj.get('EPSG:26913');
-var projection = ol.proj.get('EPSG:4326');
+var projection = ol.proj.get('EPSG:26913');
+//var projection = ol.proj.get('EPSG:4326');
 
 var basemap = new ol.layer.Tile({
   source: new ol.source.OSM()
