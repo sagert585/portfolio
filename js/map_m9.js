@@ -18,10 +18,10 @@ var sha_kml = new ol.layer.Vector({
         })
     }),
     //style: SOMETHING
-})
+});
 
 var NM_facilities = new ol.layer.Tile({
-    source: new ol.source.TileWMNS({
+    source: new ol.source.TileWMS({
         attributions: new ol.Attribution({
             html: 'UNM RGIS'
         }),
@@ -32,7 +32,7 @@ var NM_facilities = new ol.layer.Tile({
         url: 'https://rgis-data.unm.edu/ApolloCatalogWMSPublic/service.svc/get?',
         projection: projection
     })
-})
+});
                  
 var Layer_OSM = new ol.layer.Tile({
             source: new ol.source.OSM()
