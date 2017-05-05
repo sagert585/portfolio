@@ -94,6 +94,78 @@ var lovwestPoint = new ol.geom.Point(ol.proj.fromLonLat(lovwestCoord, projection
 var lovwomPoint = new ol.geom.Point(ol.proj.fromLonLat(lovwomCoord, projection));
 var abqhpPoint = new ol.geom.Point(ol.proj.fromLonLat(abqhpCoord, projection));
 
+var unmhFeature = new ol.Feature({
+  geometry: unmhPoint
+});
+var unmsrmcFeature = new ol.Feature({
+  geometry: unmsrmcPoint
+});
+var xrabicFeature = new ol.Feature({
+  geometry: xrabicPoint
+});
+var xranwicFeature = new ol.Feature({
+  geometry: xranwicPoint
+});
+var hrFeature = new ol.Feature({
+  geometry: hrPoint
+});
+var hrrFeature = new ol.Feature({
+  geometry: hrrPoint
+});
+var lovswFeature = new ol.Feature({
+  geometry: lovswPoint
+});
+var lovwestFeature = new ol.Feature({
+  geometry: lovwestPoint
+});
+var lovwomFeature = new ol.Feature({
+  geometry: lovwomPoint
+});
+var abqhpFeature = new ol.Feature({
+  geometry: abqhpPoint
+});
+
+var unmLayer = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    features: [
+      unmhFeature, unmsrmncFeature
+      ]
+  }),
+  style: UNM_fac_style
+});
+var xraLayer = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    features: [
+      xrabicFeature, xranwicFeature
+      ]
+  }),
+  style: XRA_fac_style
+});
+var hrLayer = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    features: [
+      hrFeature, hrrFeature
+      ]
+  }),
+  style: HR_fac_style
+});
+var loveLayer = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    features: [
+      lovswFeature, lovwestFeature, lovwomFeature
+      ]
+  }),
+  style: Lovelace_fac_style
+});
+var abqhpLayer = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    features: [
+      abqhpFeature
+      ]
+  }),
+  style: ABQHP_fac_style
+});
+
 var sha_kml = new ol.layer.Vector({
     source: new ol.source.Vector({
         url: 'https://sagert585.github.io/portfolio/kml/NM_SHA_qgis.kml',
@@ -126,7 +198,7 @@ var Layer_OSM = new ol.layer.Tile({
 var map = new ol.Map({
   target: 'map_canvas',
   layers: [
-      Layer_OSM, sha_kml, NM_facilities
+      Layer_OSM, sha_kml, NM_facilities, unmLayer, xraLayer, hrLayer, loveLayer, abqhpLayer
       ],
   view: new ol.View({
     center: ol.proj.fromLonLat([-106.629361, 35.105380]),
