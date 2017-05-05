@@ -75,13 +75,13 @@ var mammograms = new ol.layer.Tile({
   }),
 })
 
-var SPAR_Map = new ol.layer.Group({
+var SPAR_Layers = new ol.layer.Group({
     layers: [
         SPAR, cities, hospitals, mammograms
     ]
 });
 
-var SHA_Map = new ol.layer.Group({
+var SHA_Layers = new ol.layer.Group({
     layers: [
         SHA, cities, hospitals, mammograms
     ]
