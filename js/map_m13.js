@@ -18,9 +18,9 @@ var SPAR = new ol.layer.Tile({
 var SHA = new ol.layer.Tile({
   source: new ol.source.TileWMS({
     attributions: new ol.Attribution({
-      html: 'ESRI Maps & Data'
+      html: 'NM IBIS'
     }),
-    params: {'LAYERS':'ws_ssheets:e2sfcam_blockGroups'},
+    params: {'LAYERS':'ws_ssheets:SmallAreas_ABQ_w_CancerIncidence'},
     url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
@@ -30,12 +30,42 @@ var SHA = new ol.layer.Tile({
   }),
 })
 
-var SPAR = new ol.layer.Tile({
+var cities = new ol.layer.Tile({
+  source: new ol.source.TileWMS({
+    attributions: new ol.Attribution({
+      html: 'CABQ.gov'
+    }),
+    params: {'LAYERS':'ws_ssheets:ABQ_RR'},
+    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+    serverType: 'geoserver',
+    projection: projection,
+    format: new ol.format.KML({
+      extractStyles:false
+    })
+  }),
+})
+
+var hospitals = new ol.layer.Tile({
+  source: new ol.source.TileWMS({
+    attributions: new ol.Attribution({
+      html: 'UNM RGIS'
+    }),
+    params: {'LAYERS':'ws_ssheets:GeneralHospitals'},
+    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+    serverType: 'geoserver',
+    projection: projection,
+    format: new ol.format.KML({
+      extractStyles:false
+    })
+  }),
+})
+
+var mammograms = new ol.layer.Tile({
   source: new ol.source.TileWMS({
     attributions: new ol.Attribution({
       html: 'ESRI Maps & Data'
     }),
-    params: {'LAYERS':'ws_ssheets:e2sfcam_blockGroups'},
+    params: {'LAYERS':'ws_ssheets:MammographyFacilities'},
     url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
@@ -44,52 +74,16 @@ var SPAR = new ol.layer.Tile({
     })
   }),
 })
-
-var SPAR = new ol.layer.Tile({
-  source: new ol.source.TileWMS({
-    attributions: new ol.Attribution({
-      html: 'ESRI Maps & Data'
-    }),
-    params: {'LAYERS':'ws_ssheets:e2sfcam_blockGroups'},
-    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
-    serverType: 'geoserver',
-    projection: projection,
-    format: new ol.format.KML({
-      extractStyles:false
-    })
-  }),
-})
-
-var SPAR = new ol.layer.Tile({
-  source: new ol.source.TileWMS({
-    attributions: new ol.Attribution({
-      html: 'ESRI Maps & Data'
-    }),
-    params: {'LAYERS':'ws_ssheets:e2sfcam_blockGroups'},
-    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
-    serverType: 'geoserver',
-    projection: projection,
-    format: new ol.format.KML({
-      extractStyles:false
-    })
-  }),
-})
-
-
 
 var SPAR_Map = new ol.layer.Group({
     layers: [
-        new ol.layer.Tile({
-            source: new ol.source.Stamen({layer: 'watercolor'})
-        })
+        SPAR, cities, hospitals, mammograms
     ]
 });
 
-var Layer_OSM = new ol.layer.Group({
+var SHA_Map = new ol.layer.Group({
     layers: [
-        new ol.layer.Tile({
-            source: new ol.source.OSM()
-        })
+        SHA, cities, hospitals, mammograms
     ]
 });
 
