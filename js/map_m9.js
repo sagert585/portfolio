@@ -8,8 +8,8 @@ var fill_Lovelace = new ol.style.Fill({color: 'purple'});
 var fill_XRA = new ol.style.Fill({color: 'green'});
 var fill_HR = new ol.style.Fill({color: 'yellow'});
 var fill_ABQHP = new ol.style.Fill({color: 'blue'});
-var SHA_fill_color = [0,0,0,.20];
-var SHA_border_color = [0,0,0,1];
+var SHA_fill_color = [0,0,0,.10];
+var SHA_border_color = [0,0,0,.80];
 var SHA_style = new ol.style.Style({
   fill: new ol.style.Fill({
     color: SHA_fill_color
