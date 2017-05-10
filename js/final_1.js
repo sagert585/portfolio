@@ -5,12 +5,9 @@ var basemap = new ol.layer.Tile({
   source: new ol.source.OSM()
 });
 
-var SPAR = new ol.layer.Tile({
+var tif_A5 = new ol.layer.Tile({
   source: new ol.source.TileWMS({
-    attributions: new ol.Attribution({
-      html: 'ESRI Maps & Data'
-    }),
-    params: {'LAYERS':'ws_ssheets:e2sfcam_blockGroups'},
+    params: {'LAYERS':'ws_ssheets:35106-A5'},
     url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
@@ -20,12 +17,32 @@ var SPAR = new ol.layer.Tile({
   }),
 })
 
-var SHA = new ol.layer.Tile({
+var tif_A6 = new ol.layer.Tile({
   source: new ol.source.TileWMS({
-    attributions: new ol.Attribution({
-      html: 'NM IBIS'
-    }),
-    params: {'LAYERS':'ws_ssheets:SmallAreas_ABQ_w_CancerIncidence'},
+    params: {'LAYERS':'ws_ssheets:35106-A6'},
+    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+    serverType: 'geoserver',
+    projection: projection,
+      format: new ol.format.KML({
+      extractStyles:false
+    })
+  }),
+})
+
+var cont_A5 = new ol.layer.Tile({
+  source: new ol.source.TileWMS({
+    params: {'LAYERS':'ws_ssheets:35106-A5_CONT'},
+    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
+    serverType: 'geoserver',
+    projection: projection,    format: new ol.format.KML({
+      extractStyles:false
+    })
+  }),
+})
+
+var cont_A6 = new ol.layer.Tile({
+  source: new ol.source.TileWMS({
+    params: {'LAYERS':'ws_ssheets:35106-A6_CONT'},
     url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
@@ -35,12 +52,9 @@ var SHA = new ol.layer.Tile({
   }),
 })
 
-var cities = new ol.layer.Tile({
+var roads = new ol.layer.Tile({
   source: new ol.source.TileWMS({
-    attributions: new ol.Attribution({
-      html: 'CABQ.gov'
-    }),
-    params: {'LAYERS':'ws_ssheets:ABQ_RR'},
+    params: {'LAYERS':'ws_ssheets:tgr2006se_bern_lka'},
     url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection,
@@ -48,64 +62,15 @@ var cities = new ol.layer.Tile({
       extractStyles:false
     })
   }),
-})
-
-var hospitals = new ol.layer.Tile({
-  source: new ol.source.TileWMS({
-    attributions: new ol.Attribution({
-      html: 'UNM RGIS'
-    }),
-    params: {'LAYERS':'ws_ssheets:GeneralHospitals'},
-    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
-    serverType: 'geoserver',
-    projection: projection,
-    format: new ol.format.KML({
-      extractStyles:false
-    })
-  }),
-})
-
-var mammograms = new ol.layer.Tile({
-  source: new ol.source.TileWMS({
-    attributions: new ol.Attribution({
-      html: 'ESRI Maps & Data'
-    }),
-    params: {'LAYERS':'ws_ssheets:MammographyFacilities'},
-    url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
-    serverType: 'geoserver',
-    projection: projection,
-    format: new ol.format.KML({
-      extractStyles:false
-    })
-  }),
-})
-
-var SPAR_Layers = new ol.layer.Group({
-    layers: [
-        basemap, SPAR, cities, hospitals, mammograms
-    ]
-});
-
-var SHA_Layers = new ol.layer.Group({
-    layers: [
-        basemap, SHA, cities, hospitals, mammograms
-    ]
 });
 
 var map = new ol.Map({
   target: 'map_canvas',
+  layers: [
+    basemap, tif_A5, tif_A6, cont_A5, cont_A6, roads
+    ],
   view: new ol.View({
     center: ol.proj.fromLonLat([-106.583906, 35.174422]),
     zoom: 10
   })
 });
-
-function setMapType(newType) {
-    if(newType == 'SPAR_Map') {
-        map.setLayerGroup(SPAR_Layers);
-    } else if (newType == 'SHA_Map') {
-        map.setLayerGroup(SHA_Layers);
-    }
-}
-
-setMapType('SHA_Map')
