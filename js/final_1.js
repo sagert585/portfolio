@@ -70,7 +70,7 @@ var map = new ol.Map({
     basemap, tif_A5, tif_A6, cont_A5, cont_A6, roads
     ],
   view: new ol.View({
-    center: ol.proj.fromLonLat([-106.583906, 35.174422]),
-    zoom: 10
+    center: ol.proj.fromLonLat([-106.630856, 35.068449]),
+    zoom: 12
   })
 });
