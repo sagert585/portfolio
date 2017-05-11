@@ -7,7 +7,7 @@ var basemap = new ol.layer.Tile({
 
 var cont_A5 = new ol.layer.Tile({
   source: new ol.source.TileWMS({
-    params: {'LAYERS':'ws_ssheets:35106-A5_CONT'
+    params: {'LAYERS':'ws_ssheets:35106-A5_CONT',
               'STYLES':'cont_combined'},
     url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
@@ -17,7 +17,7 @@ var cont_A5 = new ol.layer.Tile({
 
 var cont_A6 = new ol.layer.Tile({
   source: new ol.source.TileWMS({
-    params: {'LAYERS':'ws_ssheets:35106-A6_CONT'
+    params: {'LAYERS':'ws_ssheets:35106-A6_CONT',
               'STYLES':'cont_combined'},
     url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
