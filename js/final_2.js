@@ -38,7 +38,7 @@ var roads = new ol.layer.Tile({
 var map = new ol.Map({
   target: 'map_canvas',
   layers: [
-    basemap, cont_A5, cont_A6, roads
+    basemap, roads, cont_A5, cont_A6
     ],
   view: new ol.View({
     center: ol.proj.fromLonLat([-106.630856, 35.068449]),
