@@ -5,6 +5,12 @@ var basemap = new ol.layer.Tile({
   source: new ol.source.OSM()
 });
 
+var basemap2 = new ol.layer.Tile({
+  source: new ol.source.Stamen({
+    layer: 'toner'
+  })
+});
+
 var cont_A5 = new ol.layer.Tile({
   source: new ol.source.TileWMS({
     params: {'LAYERS':'ws_ssheets:35106-A5_CONT',
@@ -38,10 +44,10 @@ var roads = new ol.layer.Tile({
 var map = new ol.Map({
   target: 'map_canvas',
   layers: [
-    basemap, roads, cont_A5, cont_A6
+    basemap2, cont_A5, cont_A6
     ],
   view: new ol.View({
-    center: ol.proj.fromLonLat([-106.630856, 35.068449]),
-    zoom: 12
+    center: ol.proj.fromLonLat([-106.586213, 35.077777]),
+    zoom: 13
   })
 });
