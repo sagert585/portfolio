@@ -25,8 +25,7 @@ var tif_A6 = new ol.layer.Tile({
 
 var cont_A5 = new ol.layer.Tile({
   source: new ol.source.TileWMS({
-    params: {'LAYERS':'ws_ssheets:35106-A5_CONT',
-              'STYLES':'cont_combined'},
+    params: {'LAYERS':'ws_ssheets:35106-A5_CONT'},
     url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
     projection: projection
