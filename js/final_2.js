@@ -27,7 +27,7 @@ var cont_A6 = new ol.layer.Tile({
 
 var roads = new ol.layer.Tile({
   source: new ol.source.TileWMS({
-    params: {'LAYERS':'ws_ssheets:tgr2006se_bern_lka'
+    params: {'LAYERS':'ws_ssheets:tgr2006se_bern_lka',
               'STYLES':'wide_road'},
     url: 'http://mapper.internetmapping.net:8081/geoserver/ows?SERVICE=WMS&',
     serverType: 'geoserver',
