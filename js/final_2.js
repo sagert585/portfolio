@@ -7,7 +7,7 @@ var basemap = new ol.layer.Tile({
 
 var basemap2 = new ol.layer.Tile({
   source: new ol.source.Stamen({
-    layer: 'toner'
+    layer: 'toner-background'
   })
 });
 
